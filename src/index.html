@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Online Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="decorative-dots">
+        <img src="images/shapes2.png" alt="">
+    </div>
+    <div class="decorative-quotes">
+        <img src="images/shapes.png" alt="">
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <p class="subtitle">ENJOY YOUR STUDYING!</p>
+            <h1 class="title">Our online courses</h1>
+        </header>
+
+        <div class="filters-section">
+            <div class="categories">
+                <button class="category-btn active" data-category="all">
+                    All <span class="count">9</span>
+                </button>
+                <button class="category-btn" data-category="marketing">
+                    Marketing <span class="count">2</span>
+                </button>
+                <button class="category-btn" data-category="management">
+                    Management <span class="count">2</span>
+                </button>
+                <button class="category-btn" data-category="hr">
+                    HR & Recruiting <span class="count">2</span>
+                </button>
+                <button class="category-btn" data-category="design">
+                    Design <span class="count">2</span>
+                </button>
+                <button class="category-btn" data-category="development">
+                    Development <span class="count">1</span>
+                </button>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search course..." id="searchInput">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="courses-grid" id="coursesGrid">
+        </div>
+
+        <div class="load-more">
+            <button class="load-more-btn" id="loadMoreBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M23 4v6h-6M1 20v-6h6"></path>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+                Load more
+            </button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
