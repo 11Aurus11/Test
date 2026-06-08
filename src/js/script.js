@@ -5,7 +5,7 @@ const courses = [
         category: "marketing",
         price: 100,
         instructor: "Jerome Bell",
-        image: "../../images/photo8.jpg"  // Мужчина в голубой рубашке с очками
+        image: "../images/photo8.jpg"  // Мужчина в голубой рубашке с очками
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const courses = [
         category: "management",
         price: 480,
         instructor: "Marvin McKinney",
-        image: "../../images/photo4.jpg"  // Мужчина в зелёной кофте
+        image: "../images/photo4.jpg"  // Мужчина в зелёной кофте
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const courses = [
         category: "hr",
         price: 200,
         instructor: "Leslie Alexander Li",
-        image: "../../images/photo3.jpg"  // Мужчина в белой поло
+        image: "../images/photo3.jpg"  // Мужчина в белой поло
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const courses = [
         category: "marketing",
         price: 530,
         instructor: "Kristin Watson",
-        image: "../../images/photo9.jpg"  // Женщина с длинными волосами
+        image: "../images/photo9.jpg"  // Женщина с длинными волосами
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const courses = [
         category: "design",
         price: 500,
         instructor: "Guy Hawkins",
-        image: "../../images/photo2.jpg"  // Мужчина в голубой рубашке, руки скрещены
+        image: "../images/photo2.jpg"  // Мужчина в голубой рубашке, руки скрещены
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const courses = [
         category: "management",
         price: 400,
         instructor: "Dianne Russell",
-        image: "../../images/photo7.jpg"  // Женщина в зелёной футболке
+        image: "../images/photo7.jpg"  // Женщина в зелёной футболке
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ const courses = [
         category: "development",
         price: 600,
         instructor: "Brooklyn Simmons",
-        image: "../../images/photo5.jpg"  // Мужчина в серой футболке
+        image: "../images/photo5.jpg"  // Мужчина в серой футболке
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const courses = [
         category: "hr",
         price: 150,
         instructor: "Kathryn Murphy",
-        image: "../../images/photo1.jpg"  // Женщина с рыжими волосами
+        image: "../images/photo1.jpg"  // Женщина с рыжими волосами
     },
     {
         id: 9,
@@ -69,7 +69,7 @@ const courses = [
         category: "design",
         price: 240,
         instructor: "Cody Fisher",
-        image: "../../images/photo6.jpg"  // Мужчина в белой кофте с очками
+        image: "../images/photo6.jpg"  // Мужчина в белой кофте с очками
     }
 ];
 
