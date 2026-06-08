@@ -1,4 +1,3 @@
-// Course data с вашими фотографиями
 const courses = [
     {
         id: 1,
@@ -74,23 +73,21 @@ const courses = [
     }
 ];
 
-// DOM Elements
+// DOM элементы
 const coursesGrid = document.getElementById('coursesGrid');
 const categoryBtns = document.querySelectorAll('.category-btn');
 const searchInput = document.getElementById('searchInput');
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 
-// Current state
 let currentCategory = 'all';
 let searchTerm = '';
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     renderCourses();
     setupEventListeners();
 });
 
-// Render courses
+// Курсы рендеринга
 function renderCourses() {
     coursesGrid.innerHTML = '';
     
@@ -106,11 +103,11 @@ function renderCourses() {
         coursesGrid.appendChild(courseCard);
     });
 
-    // Show/hide load more button
+    // Кнопка Показать/Cкрыть дополнительную загрузку
     loadMoreBtn.parentElement.style.display = filteredCourses.length >= 9 ? 'block' : 'none';
 }
 
-// Create course card element
+// Создать элемент карточки курса
 function createCourseCard(course) {
     const card = document.createElement('div');
     card.className = 'course-card';
@@ -130,7 +127,6 @@ function createCourseCard(course) {
         </div>
     `;
     
-    // Add click event
     card.addEventListener('click', () => {
         alert(`Course: ${course.title}\nPrice: $${course.price}\nInstructor: ${course.instructor}`);
     });
@@ -138,7 +134,7 @@ function createCourseCard(course) {
     return card;
 }
 
-// Get category display name
+// Получить отображаемое название категории
 function getCategoryName(category) {
     const names = {
         'marketing': 'Marketing',
@@ -150,9 +146,8 @@ function getCategoryName(category) {
     return names[category] || category;
 }
 
-// Setup event listeners
 function setupEventListeners() {
-    // Category filter
+    // Фильтр категории
     categoryBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             categoryBtns.forEach(b => b.classList.remove('active'));
@@ -162,13 +157,13 @@ function setupEventListeners() {
         });
     });
 
-    // Search
+    // Поиск
     searchInput.addEventListener('input', (e) => {
         searchTerm = e.target.value;
         renderCourses();
     });
 
-    // Load more
+    // Загрузить больше
     loadMoreBtn.addEventListener('click', () => {
         loadMoreBtn.innerHTML = `
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
