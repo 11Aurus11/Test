@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd src && echo 'Building...'",
+  "outputDirectory": "src",
+  "rewrites": [
+    { "source": "/", "destination": "/src/index.html" },
+    { "source": "/:path*", "destination": "/src/:path*" }
+  ]
+}
